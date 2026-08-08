@@ -304,6 +304,7 @@ input:focus-visible, button:focus-visible, select:focus-visible {
   display: flex; align-items: center; justify-content: center; padding: 20px; z-index: 50;
   animation: backdrop-fade 0.18s var(--ease);
 }
+.modal-backdrop[hidden] { display: none !important; }
 @keyframes backdrop-fade { from { opacity: 0; } to { opacity: 1; } }
 .modal {
   background: var(--white); border-radius: 10px; padding: 28px 32px;
